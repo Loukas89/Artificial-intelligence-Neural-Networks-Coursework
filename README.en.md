@@ -2,7 +2,7 @@
 
 # Predicting Customer Churn with Neural Networks
 
-I completed this project for the *Neural Nets & Deep Learning* module (AI105) at the University of Derby. I wanted to see how well a neural network could identify customers likely to leave a telecom company, and how its predictions would compare with a simpler starting point, logistic regression.
+I completed this project for the *Neural Nets & Deep Learning* module (AI105) at the University of Essex. I wanted to see how well a neural network could identify customers likely to leave a telecom company, and how its predictions would compare with a simpler starting point, logistic regression.
 
 [Open the notebook to explore the analysis, charts and results](./Neural_Nets_Analysis.ipynb)
 
@@ -17,7 +17,7 @@ I then trained a multilayer perceptron (MLP), tried dropout and L2 regularisatio
 I evaluated the four models on a test set of 1,057 customers, using the same classification threshold of 0.50. Precision, recall and F1 refer to customers who left the company. ROC-AUC was calculated from each model’s predicted probabilities.
 
 | Model | Accuracy | Precision | Recall | F1 | ROC-AUC |
-|---|---:|---:|---:|---:|---:|
+---------------------------------------------------------
 | Logistic Regression | 0.8108 | 0.6884 | 0.5267 | 0.5968 | 0.8447 |
 | MLP with Optuna | 0.7947 | 0.6441 | 0.5089 | 0.5686 | 0.8414 |
 | Random Forest | 0.7985 | 0.6753 | 0.4662 | 0.5516 | 0.8399 |
@@ -29,7 +29,7 @@ Logistic regression achieved the highest F1 and ROC-AUC on this split. What stoo
 
 1. Download and extract the [Telco Customer Churn dataset from Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn).
 2. Create a `Dataset` folder next to the notebook and place the CSV at `Dataset/WA_Fn-UseC_-Telco-Customer-Churn.csv`.
-3. I used Python 3.12.1 for the original run. From the repository folder, run the following commands on macOS or Linux:
+3. I used Python 3.12.1 for the original run. From the repository folder, run the following commands on macOS:
 
    ```bash
    python3.12 -m venv .venv
