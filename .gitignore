@@ -1,0 +1,13 @@
+# Local Python environment
+.venv/
+__pycache__/
+*.py[cod]
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# macOS files
+.DS_Store
+
+# Local copy of the dataset
+/Dataset/
